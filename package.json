@@ -1,0 +1,24 @@
+{
+  "name": "lab-db",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Оқу орталығы: PostgreSQL, Sequelize ORM және REST API бойынша зертханалық жұмыс",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:test": "node src/test.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node --check src/db.js && node --check src/validation.js && node --check src/server.js && node --check src/test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.6"
+  }
+}
